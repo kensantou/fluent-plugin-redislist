@@ -1,0 +1,28 @@
+= Redis list output plugin for Fluent
+
+fluent-plugin-redislist is a fluent plugin to output list type to redis.
+
+== Installation
+
+What you have to do is only installing like this:
+
+    gem install fluent-plugin-redislist
+
+Then fluent automatically loads the plugin installed.
+
+== Configuration
+
+    <match redis.**>
+      type redislist
+
+      host localhost
+      port 6379
+
+      # database number is optional.
+      db_number 0        # 0 is default
+    </match>
+
+== Copyright
+
+Copyright:: Copyright (c) 2013- Ken Santou
+License::   Apache License, Version 2.0
