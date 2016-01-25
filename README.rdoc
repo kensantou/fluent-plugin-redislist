@@ -20,6 +20,9 @@ Then fluent automatically loads the plugin installed.
 
       # database number is optional.
       db_number 0        # 0 is default
+
+      # max size of the FIFO list. no limit applied per default.
+      redislist_limit 100
     </match>
 
 == Copyright
